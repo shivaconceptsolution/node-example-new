@@ -1,0 +1,7 @@
+const url = require('url')
+const obj = url.parse('https://127.0.0.1?x=10&y=20',true)
+console.log(obj.query)
+console.log(obj.search)
+const obj1 = url.parse('https://127.0.0.1?x=10&y=20',false)
+console.log(obj1.query)
+console.log(obj1.search)
